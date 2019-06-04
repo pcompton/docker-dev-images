@@ -1,5 +1,7 @@
 FROM philcompton/dev-base
-ENV BUILD_DATE 20190601
+ENV BUILD_DATE 20190604
+ENV CC clang
+ENV CXX clang++
 
 RUN pacman -Syu --noconfirm \
     && pacman -S --noconfirm \
