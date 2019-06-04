@@ -1,5 +1,5 @@
 FROM archlinux/base
-ENV BUILD_DATE 20190601
+ENV BUILD_DATE 20190604
 RUN pacman -Syu --noconfirm \
     && pacman -S --noconfirm \
       bash-completion \
