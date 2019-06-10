@@ -1,5 +1,5 @@
 FROM philcompton/dev-base
-ENV BUILD_DATE 20190604
+ENV BUILD_DATE 20190610
 ENV CC clang
 ENV CXX clang++
 
