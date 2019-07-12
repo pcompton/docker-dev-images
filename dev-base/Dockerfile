@@ -1,15 +1,13 @@
-FROM archlinux/base
-ENV BUILD_DATE 20190619
-RUN pacman -Syu --noconfirm \
-    && pacman -S --noconfirm \
+FROM ubuntu:19.04
+ENV BUILD_DATE 20190712
+RUN apt update && apt upgrade -y && apt install -y \
       bash-completion \
+      curl \
       git \
       jq \
       httpie \
-      lsb-release \
+      less \
       subversion \
-      tar \
       wget \
-    && pacman -Scc --noconfirm
-
+    && rm -rf /var/lib/apt/lists/*
 CMD /bin/bash

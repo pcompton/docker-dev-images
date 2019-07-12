@@ -1,15 +1,14 @@
 FROM philcompton/dev-base
 ENV BUILD_DATE 20190712
-ENV CC clang
-ENV CXX clang++
 
 RUN apt update && apt upgrade -y && apt install -y \
-      clang \
-      cmake \
-      libcppunit-dev \
-      lldb \
-      llvm \
-      valgrind \
+      clojure \
+      gradle \
+      gradle-completion \
+      maven \
+      openjdk-11-jdk-headless \
+      openjdk-11-source \
+      scala \
     && rm -rf /var/lib/apt/lists/*
 
 CMD /bin/bash
