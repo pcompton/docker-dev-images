@@ -1,8 +1,7 @@
 FROM philcompton/dev-java
-ENV BUILD_DATE 20190619
+ENV BUILD_DATE 20190713
 
-RUN pacman -Syu --noconfirm \
-    && pacman -S --noconfirm \
+RUN pacman -Syu --noconfirm && pacman -S --noconfirm \
       nodejs-lts-dubnium \
       yarn \
     && pacman -Scc --noconfirm \
