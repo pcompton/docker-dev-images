@@ -1,12 +1,11 @@
 FROM philcompton/dev-base
-ENV BUILD_DATE 20190619
+ENV BUILD_DATE 20190713
 
-RUN pacman -Syu --noconfirm \
-    && pacman -S --noconfirm \
-      jdk-openjdk \
+RUN pacman -Syu --noconfirm && pacman -S --noconfirm \
       gradle \
+      jdk11-openjdk \
       maven \
-      openjdk-src \
+      openjdk11-src \
     && pacman -Scc --noconfirm
 
 CMD /bin/bash

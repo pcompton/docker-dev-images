@@ -1,12 +1,12 @@
 FROM philcompton/dev-base
-ENV BUILD_DATE 20190619
+ENV BUILD_DATE 20190713
 
-RUN pacman -Syu --noconfirm \
-    && pacman -S --noconfirm \
+RUN pacman -Syu --noconfirm && pacman -S --noconfirm \
       jupyter \
       python \
       python-beautifulsoup4 \
       python-html5lib \
+      python-ipykernel \
       python-matplotlib \
       python-mock \
       python-numpy \
@@ -19,6 +19,8 @@ RUN pacman -Syu --noconfirm \
       python-pytest \
       python-requests \
       python-scikit-learn \
+      python-scipy \
+      python-seaborn \
       python-selenium \
       python-send2trash \
       python-statsmodels \
