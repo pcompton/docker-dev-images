@@ -1,0 +1,9 @@
+FROM philcompton/dev-base
+ENV BUILD_DATE 20190714
+
+RUN pacman -Syu --noconfirm && pacman -S --noconfirm \
+      cabal-install \
+      ghc \
+    && pacman -Scc --noconfirm \
+
+CMD /bin/bash
