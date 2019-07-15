@@ -1,5 +1,5 @@
 FROM philcompton/dev-base
-ENV BUILD_DATE 20190713
+ENV BUILD_DATE 20190715
 ENV DOTNET_ROOT /opt/dotnet
 ENV PATH="/opt/dotnet:${PATH}"
 

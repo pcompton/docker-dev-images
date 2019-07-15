@@ -1,5 +1,5 @@
 FROM philcompton/dev-base
-ENV BUILD_DATE 20190714
+ENV BUILD_DATE 20190715
 
 RUN pacman -Syu --noconfirm && pacman -S --noconfirm \
       composer \
