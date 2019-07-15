@@ -7,7 +7,6 @@ RUN pacman -Syu --noconfirm && pacman -S --noconfirm \
       jq \
       httpie \
       lsb-release \
-      sed \
       tar \
       wget \
       which \
