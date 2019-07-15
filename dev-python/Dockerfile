@@ -3,7 +3,6 @@ ENV BUILD_DATE 20190715
 
 RUN pacman -Syu --noconfirm && pacman -S --noconfirm \
       jupyter \
-      python \
       python-beautifulsoup4 \
       python-html5lib \
       python-ipykernel \
