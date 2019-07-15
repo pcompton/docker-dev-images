@@ -7,8 +7,10 @@ RUN pacman -Syu --noconfirm && pacman -S --noconfirm \
       clang \
       cmake \
       cppunit \
+      gdb \
       lldb \
       llvm \
+      make \
       valgrind \
     && pacman -Scc --noconfirm
 
