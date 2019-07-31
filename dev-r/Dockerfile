@@ -1,5 +1,5 @@
 FROM philcompton/dev-base
-ENV BUILD_DATE 20190715
+ENV BUILD_DATE 20190731
 
 RUN pacman -Syu --noconfirm && pacman -S --noconfirm \
       gcc-fortran \
