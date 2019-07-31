@@ -1,15 +1,13 @@
 FROM philcompton/dev-base
-ENV BUILD_DATE 20190713
-ENV CC clang
-ENV CXX clang++
+ENV BUILD_DATE 20190731
+ENV CC gcc
+ENV CXX g++
 
 RUN pacman -Syu --noconfirm && pacman -S --noconfirm \
-      clang \
       cmake \
       cppunit \
+      gcc \
       gdb \
-      lldb \
-      llvm \
       make \
       valgrind \
     && pacman -Scc --noconfirm
